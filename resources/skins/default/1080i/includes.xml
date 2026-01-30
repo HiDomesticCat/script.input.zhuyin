@@ -4,7 +4,7 @@
     <include name="ZhuyinKeyButton">
         <width>120</width>
         <height>80</height>
-        <font>font30</font>
+        <font>font13</font>
         <texturefocus colordiffuse="FF0066CC">-</texturefocus>
         <texturenofocus colordiffuse="FF555555">-</texturenofocus>
         <textcolor>FFFFFFFF</textcolor>
@@ -15,7 +15,7 @@
     <include name="ZhuyinToneButton">
         <width>120</width>
         <height>80</height>
-        <font>font30</font>
+        <font>font13</font>
         <texturefocus colordiffuse="FF0066CC">-</texturefocus>
         <texturenofocus colordiffuse="FF666600">-</texturenofocus>
         <textcolor>FFFFFFFF</textcolor>
@@ -26,7 +26,7 @@
     <include name="ZhuyinMedialButton">
         <width>120</width>
         <height>80</height>
-        <font>font30</font>
+        <font>font13</font>
         <texturefocus colordiffuse="FF0066CC">-</texturefocus>
         <texturenofocus colordiffuse="FF006600">-</texturenofocus>
         <textcolor>FFFFFFFF</textcolor>
@@ -36,7 +36,7 @@
     <!-- 功能按鈕樣式 -->
     <include name="ZhuyinFuncButton">
         <height>80</height>
-        <font>font27</font>
+        <font>font12</font>
         <texturefocus colordiffuse="FF0066CC">-</texturefocus>
         <texturenofocus colordiffuse="FF333399">-</texturenofocus>
         <textcolor>FFFFFFFF</textcolor>
@@ -46,14 +46,14 @@
     <!-- 候選詞樣式 -->
     <include name="ZhuyinCandidateLabel">
         <height>35</height>
-        <font>font27</font>
+        <font>font12</font>
         <textcolor>FFFFFFFF</textcolor>
     </include>
     
     <!-- 狀態列樣式 -->
     <include name="ZhuyinStatusLabel">
         <height>40</height>
-        <font>font24</font>
+        <font>font10</font>
         <textcolor>FF888888</textcolor>
         <align>center</align>
     </include>

@@ -25,7 +25,7 @@ CONTROL_KEY_BASE = 1000  # 按鍵從 1000 開始
 CONTROL_STATUS_LABEL = 400
 
 
-class ZhuyinKeyboardWindow(xbmcgui.WindowXML):
+class ZhuyinKeyboardWindow(xbmcgui.WindowXMLDialog):
     """注音鍵盤視窗"""
     
     def __init__(self, *args, **kwargs):
@@ -312,8 +312,40 @@ class ZhuyinKeyboardWindow(xbmcgui.WindowXML):
     
     def _update_keyboard_display(self):
         """更新鍵盤顯示（符號模式切換）"""
-        # 這裡可以更新鍵盤按鍵的標籤
-        pass
+        symbols = SYMBOLS_FULL if self.symbol_full_width else SYMBOLS_HALF
+        
+        for row in range(KEYBOARD_ROWS):
+            for col in range(KEYBOARD_COLS):
+                # 跳過功能鍵列 (最後一列)
+                if row == KEYBOARD_ROWS - 1:
+                    continue
+                    
+                control_id = CONTROL_KEY_BASE + row * KEYBOARD_COLS + col
+                try:
+                    button = self.getControl(control_id)
+                    if self.symbol_mode:
+                        # 計算符號索引
+                        index = row * KEYBOARD_COLS + col
+                        if index < len(symbols):
+                            button.setLabel(symbols[index])
+                        else:
+                            button.setLabel("")
+                    else:
+                        # 還原注音符號
+                        char = KEYBOARD_LAYOUT[row][col]
+                        button.setLabel(char)
+                except:
+                    pass
+        
+        # 更新功能鍵標籤
+        try:
+            symbol_btn = self.getControl(CONTROL_KEY_BASE + 40) # 符號鍵
+            if self.symbol_mode:
+                symbol_btn.setLabel("注音")
+            else:
+                symbol_btn.setLabel("符號")
+        except:
+            pass
     
     def _get_status_text(self) -> str:
         """取得狀態文字"""

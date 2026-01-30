@@ -54,7 +54,7 @@
                     <width>1400</width>
                     <height>40</height>
                     <label></label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <align>left</align>
                 </control>
@@ -81,7 +81,7 @@
                     <width>160</width>
                     <height>35</height>
                     <label></label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <textcolor>FFFFFF00</textcolor>
                 </control>
                 <control type="label" id="201">
@@ -90,7 +90,7 @@
                     <width>160</width>
                     <height>35</height>
                     <label></label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="label" id="202">
@@ -99,7 +99,7 @@
                     <width>160</width>
                     <height>35</height>
                     <label></label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="label" id="203">
@@ -108,7 +108,7 @@
                     <width>160</width>
                     <height>35</height>
                     <label></label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="label" id="204">
@@ -117,7 +117,7 @@
                     <width>160</width>
                     <height>35</height>
                     <label></label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="label" id="205">
@@ -126,7 +126,7 @@
                     <width>160</width>
                     <height>35</height>
                     <label></label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="label" id="206">
@@ -135,7 +135,7 @@
                     <width>160</width>
                     <height>35</height>
                     <label></label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="label" id="207">
@@ -144,7 +144,7 @@
                     <width>160</width>
                     <height>35</height>
                     <label></label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="label" id="208">
@@ -153,7 +153,7 @@
                     <width>160</width>
                     <height>35</height>
                     <label></label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                 </control>
             </control>
@@ -170,7 +170,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄅ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1040</onup>
@@ -184,7 +184,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄉ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1041</onup>
@@ -198,7 +198,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ˇ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF666600">-</texturenofocus>
                     <onup>1042</onup>
@@ -212,7 +212,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ˋ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF666600">-</texturenofocus>
                     <onup>1043</onup>
@@ -226,7 +226,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄓ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1044</onup>
@@ -240,7 +240,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ˊ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF666600">-</texturenofocus>
                     <onup>1045</onup>
@@ -254,7 +254,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>˙</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF666600">-</texturenofocus>
                     <onup>1046</onup>
@@ -268,7 +268,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄚ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1047</onup>
@@ -282,7 +282,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄞ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1048</onup>
@@ -296,7 +296,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄢ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1049</onup>
@@ -312,7 +312,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄆ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1000</onup>
@@ -326,7 +326,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄊ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1001</onup>
@@ -340,7 +340,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄍ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1002</onup>
@@ -354,7 +354,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄐ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1003</onup>
@@ -368,7 +368,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄔ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1004</onup>
@@ -382,7 +382,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄗ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1005</onup>
@@ -396,7 +396,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄧ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF006600">-</texturenofocus>
                     <onup>1006</onup>
@@ -410,7 +410,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄛ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1007</onup>
@@ -424,7 +424,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄟ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1008</onup>
@@ -438,7 +438,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄣ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1009</onup>
@@ -454,7 +454,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄇ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1010</onup>
@@ -468,7 +468,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄋ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1011</onup>
@@ -482,7 +482,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄎ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1012</onup>
@@ -496,7 +496,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄑ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1013</onup>
@@ -510,7 +510,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄕ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1014</onup>
@@ -524,7 +524,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄘ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1015</onup>
@@ -538,7 +538,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄨ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF006600">-</texturenofocus>
                     <onup>1016</onup>
@@ -552,7 +552,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄜ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1017</onup>
@@ -566,7 +566,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄠ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1018</onup>
@@ -580,7 +580,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄤ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1019</onup>
@@ -596,7 +596,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄈ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1020</onup>
@@ -610,7 +610,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄌ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1021</onup>
@@ -624,7 +624,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄏ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1022</onup>
@@ -638,7 +638,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄒ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1023</onup>
@@ -652,7 +652,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄖ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1024</onup>
@@ -666,7 +666,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄙ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1025</onup>
@@ -680,7 +680,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄩ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF006600">-</texturenofocus>
                     <onup>1026</onup>
@@ -694,7 +694,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄝ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1027</onup>
@@ -708,7 +708,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄡ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1028</onup>
@@ -722,7 +722,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄥ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1029</onup>
@@ -738,7 +738,7 @@
                     <width>180</width>
                     <height>80</height>
                     <label>符號</label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF333399">-</texturenofocus>
                     <onup>1030</onup>
@@ -752,7 +752,7 @@
                     <width>180</width>
                     <height>80</height>
                     <label>空格</label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF333399">-</texturenofocus>
                     <onup>1031</onup>
@@ -766,7 +766,7 @@
                     <width>180</width>
                     <height>80</height>
                     <label>刪除</label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF993333">-</texturenofocus>
                     <onup>1032</onup>
@@ -780,7 +780,7 @@
                     <width>120</width>
                     <height>80</height>
                     <label>ㄦ</label>
-                    <font>font30</font>
+                    <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
                     <onup>1034</onup>
@@ -794,7 +794,7 @@
                     <width>300</width>
                     <height>80</height>
                     <label>確認送出</label>
-                    <font>font27</font>
+                    <font>font12</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF339933">-</texturenofocus>
                     <onup>1038</onup>
@@ -811,7 +811,7 @@
                 <width>1600</width>
                 <height>40</height>
                 <label>注音輸入法 | 方向鍵移動 | 確認鍵輸入 | 數字鍵選字</label>
-                <font>font24</font>
+                <font>font10</font>
                 <textcolor>FF888888</textcolor>
                 <align>center</align>
             </control>

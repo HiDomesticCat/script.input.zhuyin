@@ -11,9 +11,10 @@
 - 🎮 **遙控器優化** - 專為電視遙控器和 CEC 控制設計
 - 📝 **注音輸入** - 支援標準（大千）鍵盤佈局
 - 🔤 **智能候選** - 詞組預測與詞頻排序
-- 📚 **學習功能** - 記錄用戶選字習慣
+- 📚 **學習功能** - 記錄用戶選字習慣，支援唯讀系統 (LibreELEC)
 - 🔢 **快速選字** - 數字鍵 1-9 快速選擇候選詞
 - ⚡ **符號輸入** - 全形/半形標點符號
+- 🖥️ **原生介面** - 整合 Kodi 原生 UI (WindowXMLDialog)，支援各種佈景主題
 
 ## 安裝方式
 
@@ -142,16 +143,24 @@ script.input.zhuyin/
 
 ## 系統需求
 
-- Kodi 20 (Nexus) 或更新版本
-- Python 3.x
+- Kodi 21 (Omega) 或更新版本
+- Python 3.11+
 
 ## 已測試平台
 
-- ✅ LibreELEC (Raspberry Pi 4/5)
+- ✅ LibreELEC 12.2.1 (Linux Kernel 6.12.56)
 - ✅ CoreELEC
 - ✅ Windows 10/11
 - ✅ Ubuntu / Debian
 - ✅ macOS
+
+## 技術細節
+
+### LibreELEC / Read-Only 系統相容性
+本插件已針對唯讀檔案系統 (Read-Only Filesystem) 進行優化：
+- **系統詞庫**: 預設為唯讀模式，避免在 `/usr/share/kodi/addons` 等唯讀路徑下寫入。
+- **用戶資料**: 所有學習記錄與自訂詞組皆儲存於 `/storage/.kodi/userdata/addon_data/` (profile 目錄)。
+- **SQLite 優化**: 使用 `mode=ro` 與 `uri=True` 確保在唯讀媒體上正確開啟資料庫。
 
 ## 常見問題
 
