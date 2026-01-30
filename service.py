@@ -52,9 +52,19 @@ class ZhuyinService(xbmc.Monitor):
         while self.running and not self.abortRequested():
             # 監控原生鍵盤是否開啟
             # 如果原生鍵盤開啟，且我們的鍵盤未開啟，則啟動我們的鍵盤
+            # 增加檢查：如果原生鍵盤標題是 "English Input"，則不啟動注音鍵盤 (避免無限迴圈)
             if xbmc.getCondVisibility('Window.IsActive(virtualkeyboard)') and \
                not xbmc.getCondVisibility('Window.IsActive(10147)'):
                 
+                # 取得原生鍵盤標題 (透過 InfoLabel)
+                # 注意：Kodi API 沒有直接取得鍵盤標題的方法，但我們可以透過檢查是否是我們自己呼叫的來避免
+                # 這裡使用一個簡單的延遲與屬性檢查機制
+                
+                # 檢查是否暫停監控 (由注音鍵盤設定)
+                if xbmcgui.Window(10000).getProperty('zhuyin.pause_monitor') == 'true':
+                    xbmc.sleep(500)
+                    continue
+
                 # 啟動注音輸入法 (Overlay 模式)
                 xbmc.executebuiltin(f'RunScript({ADDON_ID}, mode=overlay)')
                 

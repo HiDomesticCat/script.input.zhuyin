@@ -154,9 +154,15 @@ class ZhuyinKeyboardWindow(xbmcgui.WindowXMLDialog):
 
     def _on_abc(self):
         """切換到英文輸入 (呼叫原生鍵盤)"""
+        # 暫停背景服務監控，避免原生鍵盤一開又被注音鍵盤蓋住
+        xbmcgui.Window(10000).setProperty('zhuyin.pause_monitor', 'true')
+        
         # 呼叫原生鍵盤，傳入當前已確認的文字
         keyboard = xbmc.Keyboard(self.committed_text, "English Input")
         keyboard.doModal()
+        
+        # 恢復監控
+        xbmcgui.Window(10000).clearProperty('zhuyin.pause_monitor')
         
         if keyboard.isConfirmed():
             # 更新文字

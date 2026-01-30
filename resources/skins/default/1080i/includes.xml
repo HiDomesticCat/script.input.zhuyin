@@ -5,8 +5,8 @@
         <width>120</width>
         <height>80</height>
         <font>font13</font>
-        <texturefocus colordiffuse="FF0066CC">-</texturefocus>
-        <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+        <texturefocus colordiffuse="FF0066CC">white.png</texturefocus>
+        <texturenofocus colordiffuse="FF555555">white.png</texturenofocus>
         <textcolor>FFFFFFFF</textcolor>
         <focusedcolor>FFFFFF00</focusedcolor>
     </include>
@@ -16,8 +16,8 @@
         <width>120</width>
         <height>80</height>
         <font>font13</font>
-        <texturefocus colordiffuse="FF0066CC">-</texturefocus>
-        <texturenofocus colordiffuse="FF666600">-</texturenofocus>
+        <texturefocus colordiffuse="FF0066CC">white.png</texturefocus>
+        <texturenofocus colordiffuse="FF666600">white.png</texturenofocus>
         <textcolor>FFFFFFFF</textcolor>
         <focusedcolor>FFFFFF00</focusedcolor>
     </include>
@@ -27,8 +27,8 @@
         <width>120</width>
         <height>80</height>
         <font>font13</font>
-        <texturefocus colordiffuse="FF0066CC">-</texturefocus>
-        <texturenofocus colordiffuse="FF006600">-</texturenofocus>
+        <texturefocus colordiffuse="FF0066CC">white.png</texturefocus>
+        <texturenofocus colordiffuse="FF006600">white.png</texturenofocus>
         <textcolor>FFFFFFFF</textcolor>
         <focusedcolor>FFFFFF00</focusedcolor>
     </include>
@@ -37,8 +37,8 @@
     <include name="ZhuyinFuncButton">
         <height>80</height>
         <font>font12</font>
-        <texturefocus colordiffuse="FF0066CC">-</texturefocus>
-        <texturenofocus colordiffuse="FF333399">-</texturenofocus>
+        <texturefocus colordiffuse="FF0066CC">white.png</texturefocus>
+        <texturenofocus colordiffuse="FF333399">white.png</texturenofocus>
         <textcolor>FFFFFFFF</textcolor>
         <focusedcolor>FFFFFF00</focusedcolor>
     </include>
