@@ -282,7 +282,11 @@ class ZhuyinKeyboardWindow(xbmcgui.WindowXMLDialog):
             self.callback(self.committed_text)
         
         # 結束學習 session
-        self.engine.engine.end_session() if hasattr(self.engine, 'engine') else None
+        # SmartCandidateEngine 繼承自 CandidateEngine，沒有 .engine 屬性
+        # 應該直接呼叫 self.engine.end_session() 如果有的話，或者透過 user_db
+        # 這裡假設 SmartCandidateEngine 應該要有 end_session 方法，或者我們需要實作它
+        if hasattr(self.engine, 'end_session'):
+            self.engine.end_session()
         
         self.close()
     

@@ -163,8 +163,8 @@ class LearningEngine:
     
     def end_session(self):
         """結束輸入 session，儲存資料"""
-        self._save_stats()
-        self._session_data.clear()
+        # 這裡可以加入儲存用戶習慣的邏輯
+        pass
     
     def clear_learning_data(self):
         """清除所有學習資料"""

@@ -84,8 +84,8 @@
                     <font>font12</font>
                     <textcolor>FFFFFF00</textcolor>
                     <focusedcolor>FF000000</focusedcolor>
-                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <texturefocus colordiffuse="FFFFD700">white.png</texturefocus>
+                    <texturenofocus>white.png</texturenofocus>
                     <onleft>208</onleft>
                     <onright>201</onright>
                     <onup>200</onup>
@@ -100,8 +100,8 @@
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <focusedcolor>FF000000</focusedcolor>
-                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <texturefocus colordiffuse="FFFFD700">white.png</texturefocus>
+                    <texturenofocus>white.png</texturenofocus>
                     <onleft>200</onleft>
                     <onright>202</onright>
                     <onup>201</onup>
@@ -116,8 +116,8 @@
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <focusedcolor>FF000000</focusedcolor>
-                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <texturefocus colordiffuse="FFFFD700">white.png</texturefocus>
+                    <texturenofocus>white.png</texturenofocus>
                     <onleft>201</onleft>
                     <onright>203</onright>
                     <onup>202</onup>
@@ -132,8 +132,8 @@
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <focusedcolor>FF000000</focusedcolor>
-                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <texturefocus colordiffuse="FFFFD700">white.png</texturefocus>
+                    <texturenofocus>white.png</texturenofocus>
                     <onleft>202</onleft>
                     <onright>204</onright>
                     <onup>203</onup>
@@ -148,8 +148,8 @@
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <focusedcolor>FF000000</focusedcolor>
-                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <texturefocus colordiffuse="FFFFD700">white.png</texturefocus>
+                    <texturenofocus>white.png</texturenofocus>
                     <onleft>203</onleft>
                     <onright>205</onright>
                     <onup>204</onup>
@@ -164,8 +164,8 @@
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <focusedcolor>FF000000</focusedcolor>
-                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <texturefocus colordiffuse="FFFFD700">white.png</texturefocus>
+                    <texturenofocus>white.png</texturenofocus>
                     <onleft>204</onleft>
                     <onright>206</onright>
                     <onup>205</onup>
@@ -180,8 +180,8 @@
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <focusedcolor>FF000000</focusedcolor>
-                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <texturefocus colordiffuse="FFFFD700">white.png</texturefocus>
+                    <texturenofocus>white.png</texturenofocus>
                     <onleft>205</onleft>
                     <onright>207</onright>
                     <onup>206</onup>
@@ -196,8 +196,8 @@
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <focusedcolor>FF000000</focusedcolor>
-                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <texturefocus colordiffuse="FFFFD700">white.png</texturefocus>
+                    <texturenofocus>white.png</texturenofocus>
                     <onleft>206</onleft>
                     <onright>208</onright>
                     <onup>207</onup>
@@ -212,8 +212,8 @@
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
                     <focusedcolor>FF000000</focusedcolor>
-                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <texturefocus colordiffuse="FFFFD700">white.png</texturefocus>
+                    <texturenofocus>white.png</texturenofocus>
                     <onleft>207</onleft>
                     <onright>200</onright>
                     <onup>208</onup>

@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-詞庫初始化腳本 - 建立注音詞庫資料庫
-"""
-
 import sqlite3
 import os
 

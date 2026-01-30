@@ -56,16 +56,14 @@ class ZhuyinService(xbmc.Monitor):
             if xbmc.getCondVisibility('Window.IsActive(virtualkeyboard)') and \
                not xbmc.getCondVisibility('Window.IsActive(10147)'):
                 
-                # 取得原生鍵盤標題 (透過 InfoLabel)
-                # 注意：Kodi API 沒有直接取得鍵盤標題的方法，但我們可以透過檢查是否是我們自己呼叫的來避免
-                # 這裡使用一個簡單的延遲與屬性檢查機制
-                
                 # 檢查是否暫停監控 (由注音鍵盤設定)
                 if xbmcgui.Window(10000).getProperty('zhuyin.pause_monitor') == 'true':
                     xbmc.sleep(500)
                     continue
 
                 # 啟動注音輸入法 (Overlay 模式)
+                # 使用 RunScript 啟動，確保使用正確的 ID
+                # 注意：WindowXMLDialog 的 ID 必須與 XML 中的 ID 一致 (10147)
                 xbmc.executebuiltin(f'RunScript({ADDON_ID}, mode=overlay)')
                 
                 # 等待一下避免重複啟動
