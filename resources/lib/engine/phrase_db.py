@@ -21,16 +21,26 @@ class PhraseDatabase:
         Args:
             db_path: 資料庫路徑，None 則使用預設路徑
         """
+        self.read_only = False
+        
         if db_path is None:
             addon = xbmcaddon.Addon()
             addon_path = xbmcvfs.translatePath(addon.getAddonInfo('path'))
             db_path = os.path.join(addon_path, 'resources', 'data', 'phrases.db')
+            # 系統詞庫預設為唯讀，避免在唯讀檔案系統上出錯
+            self.read_only = True
         
         self.db_path = db_path
-        self._ensure_database()
+        
+        # 只有非唯讀模式才嘗試建立/更新資料庫結構
+        if not self.read_only:
+            self._ensure_database()
     
     def _ensure_database(self):
         """確保資料庫存在且結構正確"""
+        if self.read_only:
+            return
+
         with self._get_connection() as conn:
             cursor = conn.cursor()
             
@@ -57,7 +67,20 @@ class PhraseDatabase:
     @contextmanager
     def _get_connection(self):
         """取得資料庫連線"""
-        conn = sqlite3.connect(self.db_path)
+        if self.read_only:
+            # 使用 URI 模式開啟唯讀連線
+            # 注意：Windows 路徑可能需要特殊處理，但在 Kodi 環境通常沒問題
+            # 為了最大兼容性，若檔案存在則嘗試唯讀，否則標準開啟
+            try:
+                # 嘗試使用 URI 模式 (Python 3.4+)
+                uri_path = f"file:{self.db_path}?mode=ro"
+                conn = sqlite3.connect(uri_path, uri=True)
+            except sqlite3.OperationalError:
+                # 降級處理
+                conn = sqlite3.connect(self.db_path)
+        else:
+            conn = sqlite3.connect(self.db_path)
+            
         conn.row_factory = sqlite3.Row
         try:
             yield conn
@@ -178,6 +201,9 @@ class PhraseDatabase:
     
     def add_phrase(self, zhuyin: str, phrase: str, frequency: int = 100):
         """新增詞組"""
+        if self.read_only:
+            return
+
         with self._get_connection() as conn:
             cursor = conn.cursor()
             
@@ -190,11 +216,14 @@ class PhraseDatabase:
     
     def update_frequency(self, zhuyin: str, phrase: str, increment: int = 1):
         """更新詞頻"""
+        if self.read_only:
+            return
+
         with self._get_connection() as conn:
             cursor = conn.cursor()
             
             cursor.execute('''
-                UPDATE phrases 
+                UPDATE phrases
                 SET frequency = frequency + ?
                 WHERE zhuyin = ? AND phrase = ?
             ''', (increment, zhuyin, phrase))
