@@ -75,7 +75,7 @@
                 </control>
                 
                 <!-- 候選詞 1-9 -->
-                <control type="label" id="200">
+                <control type="button" id="200">
                     <posx>20</posx>
                     <posy>8</posy>
                     <width>160</width>
@@ -83,8 +83,15 @@
                     <label></label>
                     <font>font12</font>
                     <textcolor>FFFFFF00</textcolor>
+                    <focusedcolor>FF000000</focusedcolor>
+                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onleft>208</onleft>
+                    <onright>201</onright>
+                    <onup>200</onup>
+                    <ondown>1000</ondown>
                 </control>
-                <control type="label" id="201">
+                <control type="button" id="201">
                     <posx>190</posx>
                     <posy>8</posy>
                     <width>160</width>
@@ -92,8 +99,15 @@
                     <label></label>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
+                    <focusedcolor>FF000000</focusedcolor>
+                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onleft>200</onleft>
+                    <onright>202</onright>
+                    <onup>201</onup>
+                    <ondown>1001</ondown>
                 </control>
-                <control type="label" id="202">
+                <control type="button" id="202">
                     <posx>360</posx>
                     <posy>8</posy>
                     <width>160</width>
@@ -101,8 +115,15 @@
                     <label></label>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
+                    <focusedcolor>FF000000</focusedcolor>
+                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onleft>201</onleft>
+                    <onright>203</onright>
+                    <onup>202</onup>
+                    <ondown>1002</ondown>
                 </control>
-                <control type="label" id="203">
+                <control type="button" id="203">
                     <posx>530</posx>
                     <posy>8</posy>
                     <width>160</width>
@@ -110,8 +131,15 @@
                     <label></label>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
+                    <focusedcolor>FF000000</focusedcolor>
+                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onleft>202</onleft>
+                    <onright>204</onright>
+                    <onup>203</onup>
+                    <ondown>1003</ondown>
                 </control>
-                <control type="label" id="204">
+                <control type="button" id="204">
                     <posx>700</posx>
                     <posy>8</posy>
                     <width>160</width>
@@ -119,8 +147,15 @@
                     <label></label>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
+                    <focusedcolor>FF000000</focusedcolor>
+                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onleft>203</onleft>
+                    <onright>205</onright>
+                    <onup>204</onup>
+                    <ondown>1004</ondown>
                 </control>
-                <control type="label" id="205">
+                <control type="button" id="205">
                     <posx>870</posx>
                     <posy>8</posy>
                     <width>160</width>
@@ -128,8 +163,15 @@
                     <label></label>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
+                    <focusedcolor>FF000000</focusedcolor>
+                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onleft>204</onleft>
+                    <onright>206</onright>
+                    <onup>205</onup>
+                    <ondown>1005</ondown>
                 </control>
-                <control type="label" id="206">
+                <control type="button" id="206">
                     <posx>1040</posx>
                     <posy>8</posy>
                     <width>160</width>
@@ -137,8 +179,15 @@
                     <label></label>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
+                    <focusedcolor>FF000000</focusedcolor>
+                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onleft>205</onleft>
+                    <onright>207</onright>
+                    <onup>206</onup>
+                    <ondown>1006</ondown>
                 </control>
-                <control type="label" id="207">
+                <control type="button" id="207">
                     <posx>1210</posx>
                     <posy>8</posy>
                     <width>160</width>
@@ -146,8 +195,15 @@
                     <label></label>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
+                    <focusedcolor>FF000000</focusedcolor>
+                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onleft>206</onleft>
+                    <onright>208</onright>
+                    <onup>207</onup>
+                    <ondown>1007</ondown>
                 </control>
-                <control type="label" id="208">
+                <control type="button" id="208">
                     <posx>1380</posx>
                     <posy>8</posy>
                     <width>160</width>
@@ -155,6 +211,13 @@
                     <label></label>
                     <font>font12</font>
                     <textcolor>FFFFFFFF</textcolor>
+                    <focusedcolor>FF000000</focusedcolor>
+                    <texturefocus colordiffuse="FFFFD700">-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <onleft>207</onleft>
+                    <onright>200</onright>
+                    <onup>208</onup>
+                    <ondown>1008</ondown>
                 </control>
             </control>
             
@@ -173,7 +236,7 @@
                     <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
-                    <onup>1040</onup>
+                    <onup>200</onup>
                     <ondown>1010</ondown>
                     <onleft>1009</onleft>
                     <onright>1001</onright>
@@ -187,7 +250,7 @@
                     <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
-                    <onup>1041</onup>
+                    <onup>201</onup>
                     <ondown>1011</ondown>
                     <onleft>1000</onleft>
                     <onright>1002</onright>
@@ -201,7 +264,7 @@
                     <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF666600">-</texturenofocus>
-                    <onup>1042</onup>
+                    <onup>202</onup>
                     <ondown>1012</ondown>
                     <onleft>1001</onleft>
                     <onright>1003</onright>
@@ -215,7 +278,7 @@
                     <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF666600">-</texturenofocus>
-                    <onup>1043</onup>
+                    <onup>203</onup>
                     <ondown>1013</ondown>
                     <onleft>1002</onleft>
                     <onright>1004</onright>
@@ -229,7 +292,7 @@
                     <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
-                    <onup>1044</onup>
+                    <onup>204</onup>
                     <ondown>1014</ondown>
                     <onleft>1003</onleft>
                     <onright>1005</onright>
@@ -243,7 +306,7 @@
                     <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF666600">-</texturenofocus>
-                    <onup>1045</onup>
+                    <onup>205</onup>
                     <ondown>1015</ondown>
                     <onleft>1004</onleft>
                     <onright>1006</onright>
@@ -257,7 +320,7 @@
                     <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF666600">-</texturenofocus>
-                    <onup>1046</onup>
+                    <onup>206</onup>
                     <ondown>1016</ondown>
                     <onleft>1005</onleft>
                     <onright>1007</onright>
@@ -271,7 +334,7 @@
                     <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
-                    <onup>1047</onup>
+                    <onup>207</onup>
                     <ondown>1017</ondown>
                     <onleft>1006</onleft>
                     <onright>1008</onright>
@@ -285,7 +348,7 @@
                     <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
-                    <onup>1048</onup>
+                    <onup>208</onup>
                     <ondown>1018</ondown>
                     <onleft>1007</onleft>
                     <onright>1009</onright>
@@ -299,7 +362,7 @@
                     <font>font13</font>
                     <texturefocus colordiffuse="FF0066CC">-</texturefocus>
                     <texturenofocus colordiffuse="FF555555">-</texturenofocus>
-                    <onup>1049</onup>
+                    <onup>208</onup>
                     <ondown>1019</ondown>
                     <onleft>1008</onleft>
                     <onright>1000</onright>
@@ -786,6 +849,20 @@
                     <onup>1034</onup>
                     <ondown>1004</ondown>
                     <onleft>1042</onleft>
+                    <onright>1044</onright>
+                </control>
+                <control type="button" id="1044">
+                    <posx>700</posx>
+                    <posy>360</posy>
+                    <width>280</width>
+                    <height>80</height>
+                    <label>ABC / 英文</label>
+                    <font>font12</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF333399">-</texturenofocus>
+                    <onup>1035</onup>
+                    <ondown>1005</ondown>
+                    <onleft>1043</onleft>
                     <onright>1049</onright>
                 </control>
                 <control type="button" id="1049">
@@ -799,7 +876,7 @@
                     <texturenofocus colordiffuse="FF339933">-</texturenofocus>
                     <onup>1038</onup>
                     <ondown>1008</ondown>
-                    <onleft>1043</onleft>
+                    <onleft>1044</onleft>
                     <onright>1040</onright>
                 </control>
             </control>

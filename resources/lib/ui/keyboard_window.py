@@ -63,22 +63,8 @@ class ZhuyinKeyboardWindow(xbmcgui.WindowXMLDialog):
         """處理遙控器動作"""
         action_id = action.getId()
         
-        # 方向鍵
-        if action_id == xbmcgui.ACTION_MOVE_UP:
-            self._move_focus(-1, 0)
-        elif action_id == xbmcgui.ACTION_MOVE_DOWN:
-            self._move_focus(1, 0)
-        elif action_id == xbmcgui.ACTION_MOVE_LEFT:
-            self._move_focus(0, -1)
-        elif action_id == xbmcgui.ACTION_MOVE_RIGHT:
-            self._move_focus(0, 1)
-        
-        # 確認鍵
-        elif action_id == xbmcgui.ACTION_SELECT_ITEM:
-            self._on_key_press()
-        
         # 返回/刪除
-        elif action_id in (xbmcgui.ACTION_PREVIOUS_MENU, 
+        if action_id in (xbmcgui.ACTION_PREVIOUS_MENU,
                           xbmcgui.ACTION_NAV_BACK):
             if self.current_input:
                 self._delete_last()
@@ -103,9 +89,16 @@ class ZhuyinKeyboardWindow(xbmcgui.WindowXMLDialog):
             key_index = control_id - CONTROL_KEY_BASE
             row = key_index // KEYBOARD_COLS
             col = key_index % KEYBOARD_COLS
+            
+            # 更新當前按鍵位置
             self.key_row = row
             self.key_col = col
-            self._on_key_press()
+            
+            # 處理特殊按鍵 (ABC)
+            if control_id == 1044:
+                self._on_abc()
+            else:
+                self._on_key_press()
         
         elif control_id >= 200 and control_id < 300:
             # 候選詞點擊
@@ -135,6 +128,10 @@ class ZhuyinKeyboardWindow(xbmcgui.WindowXMLDialog):
     
     def _on_key_press(self):
         """處理按鍵按下"""
+        # 確保索引在範圍內
+        if self.key_row >= len(KEYBOARD_LAYOUT) or self.key_col >= len(KEYBOARD_LAYOUT[0]):
+            return
+
         key = KEYBOARD_LAYOUT[self.key_row][self.key_col]
         
         if not key:
@@ -154,6 +151,19 @@ class ZhuyinKeyboardWindow(xbmcgui.WindowXMLDialog):
         else:
             # 注音符號或聲調
             self._input_zhuyin(key)
+
+    def _on_abc(self):
+        """切換到英文輸入 (呼叫原生鍵盤)"""
+        # 呼叫原生鍵盤，傳入當前已確認的文字
+        keyboard = xbmc.Keyboard(self.committed_text, "English Input")
+        keyboard.doModal()
+        
+        if keyboard.isConfirmed():
+            # 更新文字
+            new_text = keyboard.getText()
+            if new_text:
+                self.committed_text = new_text
+                self._update_display()
     
     def _input_zhuyin(self, char: str):
         """輸入注音符號"""

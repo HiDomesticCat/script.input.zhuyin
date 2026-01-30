@@ -5,6 +5,7 @@ Kodi 注音輸入法 - 主程式入口
 """
 
 import sys
+import json
 import xbmc
 import xbmcgui
 import xbmcaddon
@@ -47,6 +48,7 @@ def main():
     # 取得回調插件 ID（如果有）
     callback_addon = args.get('callback', None)
     initial_text = args.get('text', '')
+    mode = args.get('mode', '')
     
     # 定義回調函數
     def on_input_complete(text):
@@ -56,11 +58,23 @@ def main():
         
         log(f"輸入完成: {text}")
         
+        if mode == 'overlay':
+            # Overlay 模式：發送文字到原生鍵盤
+            if text:
+                cmd = {
+                    "jsonrpc": "2.0",
+                    "method": "Input.SendText",
+                    "params": {"text": text, "done": True},
+                    "id": 1
+                }
+                xbmc.executeJSONRPC(json.dumps(cmd))
+            return
+
         if callback_addon:
             # 透過 JSON-RPC 或其他方式回傳結果
             # 這裡簡化處理，直接設定屬性
             xbmcgui.Window(10000).setProperty(
-                f'zhuyin_input_result_{callback_addon}', 
+                f'zhuyin_input_result_{callback_addon}',
                 text
             )
         else:

@@ -50,7 +50,18 @@ class ZhuyinService(xbmc.Monitor):
         """服務主迴圈"""
         # 服務保持運行
         while self.running and not self.abortRequested():
-            if self.waitForAbort(1):
+            # 監控原生鍵盤是否開啟
+            # 如果原生鍵盤開啟，且我們的鍵盤未開啟，則啟動我們的鍵盤
+            if xbmc.getCondVisibility('Window.IsActive(virtualkeyboard)') and \
+               not xbmc.getCondVisibility('Window.IsActive(10147)'):
+                
+                # 啟動注音輸入法 (Overlay 模式)
+                xbmc.executebuiltin(f'RunScript({ADDON_ID}, mode=overlay)')
+                
+                # 等待一下避免重複啟動
+                xbmc.sleep(1000)
+            
+            if self.waitForAbort(0.5):
                 break
         
         log("注音輸入法服務結束")
