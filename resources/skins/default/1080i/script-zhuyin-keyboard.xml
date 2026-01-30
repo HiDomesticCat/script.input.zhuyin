@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="10147">
+    <defaultcontrol always="true">1000</defaultcontrol>
+    <coordinates>
+        <system>1</system>
+        <posx>0</posx>
+        <posy>0</posy>
+    </coordinates>
+    <controls>
+        <!-- 背景 -->
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <texture colordiffuse="CC000000">-</texture>
+        </control>
+        
+        <!-- 主容器 -->
+        <control type="group">
+            <posx>160</posx>
+            <posy>200</posy>
+            
+            <!-- 標題列 -->
+            <control type="label" id="99">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1600</width>
+                <height>50</height>
+                <label>注音輸入法</label>
+                <font>font_MainMenu</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+            </control>
+            
+            <!-- 輸入狀態列 -->
+            <control type="group">
+                <posx>0</posx>
+                <posy>60</posy>
+                
+                <!-- 已輸入文字背景 -->
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1600</width>
+                    <height>60</height>
+                    <texture colordiffuse="FF333333">-</texture>
+                </control>
+                
+                <!-- 已輸入文字 -->
+                <control type="label" id="100">
+                    <posx>20</posx>
+                    <posy>10</posy>
+                    <width>1400</width>
+                    <height>40</height>
+                    <label></label>
+                    <font>font30</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                    <align>left</align>
+                </control>
+            </control>
+            
+            <!-- 候選詞列 -->
+            <control type="group">
+                <posx>0</posx>
+                <posy>130</posy>
+                
+                <!-- 候選詞背景 -->
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1600</width>
+                    <height>50</height>
+                    <texture colordiffuse="FF444444">-</texture>
+                </control>
+                
+                <!-- 候選詞 1-9 -->
+                <control type="label" id="200">
+                    <posx>20</posx>
+                    <posy>8</posy>
+                    <width>160</width>
+                    <height>35</height>
+                    <label></label>
+                    <font>font27</font>
+                    <textcolor>FFFFFF00</textcolor>
+                </control>
+                <control type="label" id="201">
+                    <posx>190</posx>
+                    <posy>8</posy>
+                    <width>160</width>
+                    <height>35</height>
+                    <label></label>
+                    <font>font27</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                </control>
+                <control type="label" id="202">
+                    <posx>360</posx>
+                    <posy>8</posy>
+                    <width>160</width>
+                    <height>35</height>
+                    <label></label>
+                    <font>font27</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                </control>
+                <control type="label" id="203">
+                    <posx>530</posx>
+                    <posy>8</posy>
+                    <width>160</width>
+                    <height>35</height>
+                    <label></label>
+                    <font>font27</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                </control>
+                <control type="label" id="204">
+                    <posx>700</posx>
+                    <posy>8</posy>
+                    <width>160</width>
+                    <height>35</height>
+                    <label></label>
+                    <font>font27</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                </control>
+                <control type="label" id="205">
+                    <posx>870</posx>
+                    <posy>8</posy>
+                    <width>160</width>
+                    <height>35</height>
+                    <label></label>
+                    <font>font27</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                </control>
+                <control type="label" id="206">
+                    <posx>1040</posx>
+                    <posy>8</posy>
+                    <width>160</width>
+                    <height>35</height>
+                    <label></label>
+                    <font>font27</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                </control>
+                <control type="label" id="207">
+                    <posx>1210</posx>
+                    <posy>8</posy>
+                    <width>160</width>
+                    <height>35</height>
+                    <label></label>
+                    <font>font27</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                </control>
+                <control type="label" id="208">
+                    <posx>1380</posx>
+                    <posy>8</posy>
+                    <width>160</width>
+                    <height>35</height>
+                    <label></label>
+                    <font>font27</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                </control>
+            </control>
+            
+            <!-- 鍵盤區域 -->
+            <control type="group" id="300">
+                <posx>100</posx>
+                <posy>200</posy>
+                
+                <!-- 第一列: ㄅㄉˇˋㄓˊ˙ㄚㄞㄢ -->
+                <control type="button" id="1000">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄅ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1040</onup>
+                    <ondown>1010</ondown>
+                    <onleft>1009</onleft>
+                    <onright>1001</onright>
+                </control>
+                <control type="button" id="1001">
+                    <posx>130</posx>
+                    <posy>0</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄉ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1041</onup>
+                    <ondown>1011</ondown>
+                    <onleft>1000</onleft>
+                    <onright>1002</onright>
+                </control>
+                <control type="button" id="1002">
+                    <posx>260</posx>
+                    <posy>0</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ˇ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF666600">-</texturenofocus>
+                    <onup>1042</onup>
+                    <ondown>1012</ondown>
+                    <onleft>1001</onleft>
+                    <onright>1003</onright>
+                </control>
+                <control type="button" id="1003">
+                    <posx>390</posx>
+                    <posy>0</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ˋ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF666600">-</texturenofocus>
+                    <onup>1043</onup>
+                    <ondown>1013</ondown>
+                    <onleft>1002</onleft>
+                    <onright>1004</onright>
+                </control>
+                <control type="button" id="1004">
+                    <posx>520</posx>
+                    <posy>0</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄓ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1044</onup>
+                    <ondown>1014</ondown>
+                    <onleft>1003</onleft>
+                    <onright>1005</onright>
+                </control>
+                <control type="button" id="1005">
+                    <posx>650</posx>
+                    <posy>0</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ˊ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF666600">-</texturenofocus>
+                    <onup>1045</onup>
+                    <ondown>1015</ondown>
+                    <onleft>1004</onleft>
+                    <onright>1006</onright>
+                </control>
+                <control type="button" id="1006">
+                    <posx>780</posx>
+                    <posy>0</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>˙</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF666600">-</texturenofocus>
+                    <onup>1046</onup>
+                    <ondown>1016</ondown>
+                    <onleft>1005</onleft>
+                    <onright>1007</onright>
+                </control>
+                <control type="button" id="1007">
+                    <posx>910</posx>
+                    <posy>0</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄚ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1047</onup>
+                    <ondown>1017</ondown>
+                    <onleft>1006</onleft>
+                    <onright>1008</onright>
+                </control>
+                <control type="button" id="1008">
+                    <posx>1040</posx>
+                    <posy>0</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄞ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1048</onup>
+                    <ondown>1018</ondown>
+                    <onleft>1007</onleft>
+                    <onright>1009</onright>
+                </control>
+                <control type="button" id="1009">
+                    <posx>1170</posx>
+                    <posy>0</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄢ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1049</onup>
+                    <ondown>1019</ondown>
+                    <onleft>1008</onleft>
+                    <onright>1000</onright>
+                </control>
+                
+                <!-- 第二列: ㄆㄊㄍㄐㄔㄗㄧㄛㄟㄣ -->
+                <control type="button" id="1010">
+                    <posx>0</posx>
+                    <posy>90</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄆ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1000</onup>
+                    <ondown>1020</ondown>
+                    <onleft>1019</onleft>
+                    <onright>1011</onright>
+                </control>
+                <control type="button" id="1011">
+                    <posx>130</posx>
+                    <posy>90</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄊ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1001</onup>
+                    <ondown>1021</ondown>
+                    <onleft>1010</onleft>
+                    <onright>1012</onright>
+                </control>
+                <control type="button" id="1012">
+                    <posx>260</posx>
+                    <posy>90</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄍ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1002</onup>
+                    <ondown>1022</ondown>
+                    <onleft>1011</onleft>
+                    <onright>1013</onright>
+                </control>
+                <control type="button" id="1013">
+                    <posx>390</posx>
+                    <posy>90</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄐ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1003</onup>
+                    <ondown>1023</ondown>
+                    <onleft>1012</onleft>
+                    <onright>1014</onright>
+                </control>
+                <control type="button" id="1014">
+                    <posx>520</posx>
+                    <posy>90</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄔ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1004</onup>
+                    <ondown>1024</ondown>
+                    <onleft>1013</onleft>
+                    <onright>1015</onright>
+                </control>
+                <control type="button" id="1015">
+                    <posx>650</posx>
+                    <posy>90</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄗ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1005</onup>
+                    <ondown>1025</ondown>
+                    <onleft>1014</onleft>
+                    <onright>1016</onright>
+                </control>
+                <control type="button" id="1016">
+                    <posx>780</posx>
+                    <posy>90</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄧ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF006600">-</texturenofocus>
+                    <onup>1006</onup>
+                    <ondown>1026</ondown>
+                    <onleft>1015</onleft>
+                    <onright>1017</onright>
+                </control>
+                <control type="button" id="1017">
+                    <posx>910</posx>
+                    <posy>90</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄛ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1007</onup>
+                    <ondown>1027</ondown>
+                    <onleft>1016</onleft>
+                    <onright>1018</onright>
+                </control>
+                <control type="button" id="1018">
+                    <posx>1040</posx>
+                    <posy>90</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄟ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1008</onup>
+                    <ondown>1028</ondown>
+                    <onleft>1017</onleft>
+                    <onright>1019</onright>
+                </control>
+                <control type="button" id="1019">
+                    <posx>1170</posx>
+                    <posy>90</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄣ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1009</onup>
+                    <ondown>1029</ondown>
+                    <onleft>1018</onleft>
+                    <onright>1010</onright>
+                </control>
+                
+                <!-- 第三列: ㄇㄋㄎㄑㄕㄘㄨㄜㄠㄤ -->
+                <control type="button" id="1020">
+                    <posx>0</posx>
+                    <posy>180</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄇ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1010</onup>
+                    <ondown>1030</ondown>
+                    <onleft>1029</onleft>
+                    <onright>1021</onright>
+                </control>
+                <control type="button" id="1021">
+                    <posx>130</posx>
+                    <posy>180</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄋ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1011</onup>
+                    <ondown>1031</ondown>
+                    <onleft>1020</onleft>
+                    <onright>1022</onright>
+                </control>
+                <control type="button" id="1022">
+                    <posx>260</posx>
+                    <posy>180</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄎ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1012</onup>
+                    <ondown>1032</ondown>
+                    <onleft>1021</onleft>
+                    <onright>1023</onright>
+                </control>
+                <control type="button" id="1023">
+                    <posx>390</posx>
+                    <posy>180</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄑ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1013</onup>
+                    <ondown>1033</ondown>
+                    <onleft>1022</onleft>
+                    <onright>1024</onright>
+                </control>
+                <control type="button" id="1024">
+                    <posx>520</posx>
+                    <posy>180</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄕ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1014</onup>
+                    <ondown>1034</ondown>
+                    <onleft>1023</onleft>
+                    <onright>1025</onright>
+                </control>
+                <control type="button" id="1025">
+                    <posx>650</posx>
+                    <posy>180</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄘ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1015</onup>
+                    <ondown>1035</ondown>
+                    <onleft>1024</onleft>
+                    <onright>1026</onright>
+                </control>
+                <control type="button" id="1026">
+                    <posx>780</posx>
+                    <posy>180</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄨ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF006600">-</texturenofocus>
+                    <onup>1016</onup>
+                    <ondown>1036</ondown>
+                    <onleft>1025</onleft>
+                    <onright>1027</onright>
+                </control>
+                <control type="button" id="1027">
+                    <posx>910</posx>
+                    <posy>180</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄜ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1017</onup>
+                    <ondown>1037</ondown>
+                    <onleft>1026</onleft>
+                    <onright>1028</onright>
+                </control>
+                <control type="button" id="1028">
+                    <posx>1040</posx>
+                    <posy>180</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄠ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1018</onup>
+                    <ondown>1038</ondown>
+                    <onleft>1027</onleft>
+                    <onright>1029</onright>
+                </control>
+                <control type="button" id="1029">
+                    <posx>1170</posx>
+                    <posy>180</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄤ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1019</onup>
+                    <ondown>1039</ondown>
+                    <onleft>1028</onleft>
+                    <onright>1020</onright>
+                </control>
+                
+                <!-- 第四列: ㄈㄌㄏㄒㄖㄙㄩㄝㄡㄥ -->
+                <control type="button" id="1030">
+                    <posx>0</posx>
+                    <posy>270</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄈ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1020</onup>
+                    <ondown>1040</ondown>
+                    <onleft>1039</onleft>
+                    <onright>1031</onright>
+                </control>
+                <control type="button" id="1031">
+                    <posx>130</posx>
+                    <posy>270</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄌ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1021</onup>
+                    <ondown>1041</ondown>
+                    <onleft>1030</onleft>
+                    <onright>1032</onright>
+                </control>
+                <control type="button" id="1032">
+                    <posx>260</posx>
+                    <posy>270</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄏ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1022</onup>
+                    <ondown>1042</ondown>
+                    <onleft>1031</onleft>
+                    <onright>1033</onright>
+                </control>
+                <control type="button" id="1033">
+                    <posx>390</posx>
+                    <posy>270</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄒ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1023</onup>
+                    <ondown>1043</ondown>
+                    <onleft>1032</onleft>
+                    <onright>1034</onright>
+                </control>
+                <control type="button" id="1034">
+                    <posx>520</posx>
+                    <posy>270</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄖ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1024</onup>
+                    <ondown>1043</ondown>
+                    <onleft>1033</onleft>
+                    <onright>1035</onright>
+                </control>
+                <control type="button" id="1035">
+                    <posx>650</posx>
+                    <posy>270</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄙ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1025</onup>
+                    <ondown>1043</ondown>
+                    <onleft>1034</onleft>
+                    <onright>1036</onright>
+                </control>
+                <control type="button" id="1036">
+                    <posx>780</posx>
+                    <posy>270</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄩ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF006600">-</texturenofocus>
+                    <onup>1026</onup>
+                    <ondown>1043</ondown>
+                    <onleft>1035</onleft>
+                    <onright>1037</onright>
+                </control>
+                <control type="button" id="1037">
+                    <posx>910</posx>
+                    <posy>270</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄝ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1027</onup>
+                    <ondown>1049</ondown>
+                    <onleft>1036</onleft>
+                    <onright>1038</onright>
+                </control>
+                <control type="button" id="1038">
+                    <posx>1040</posx>
+                    <posy>270</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄡ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1028</onup>
+                    <ondown>1049</ondown>
+                    <onleft>1037</onleft>
+                    <onright>1039</onright>
+                </control>
+                <control type="button" id="1039">
+                    <posx>1170</posx>
+                    <posy>270</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄥ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1029</onup>
+                    <ondown>1049</ondown>
+                    <onleft>1038</onleft>
+                    <onright>1030</onright>
+                </control>
+                
+                <!-- 第五列: 功能鍵 -->
+                <control type="button" id="1040">
+                    <posx>0</posx>
+                    <posy>360</posy>
+                    <width>180</width>
+                    <height>80</height>
+                    <label>符號</label>
+                    <font>font27</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF333399">-</texturenofocus>
+                    <onup>1030</onup>
+                    <ondown>1000</ondown>
+                    <onleft>1049</onleft>
+                    <onright>1041</onright>
+                </control>
+                <control type="button" id="1041">
+                    <posx>190</posx>
+                    <posy>360</posy>
+                    <width>180</width>
+                    <height>80</height>
+                    <label>空格</label>
+                    <font>font27</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF333399">-</texturenofocus>
+                    <onup>1031</onup>
+                    <ondown>1001</ondown>
+                    <onleft>1040</onleft>
+                    <onright>1042</onright>
+                </control>
+                <control type="button" id="1042">
+                    <posx>380</posx>
+                    <posy>360</posy>
+                    <width>180</width>
+                    <height>80</height>
+                    <label>刪除</label>
+                    <font>font27</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF993333">-</texturenofocus>
+                    <onup>1032</onup>
+                    <ondown>1002</ondown>
+                    <onleft>1041</onleft>
+                    <onright>1043</onright>
+                </control>
+                <control type="button" id="1043">
+                    <posx>570</posx>
+                    <posy>360</posy>
+                    <width>120</width>
+                    <height>80</height>
+                    <label>ㄦ</label>
+                    <font>font30</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF555555">-</texturenofocus>
+                    <onup>1034</onup>
+                    <ondown>1004</ondown>
+                    <onleft>1042</onleft>
+                    <onright>1049</onright>
+                </control>
+                <control type="button" id="1049">
+                    <posx>990</posx>
+                    <posy>360</posy>
+                    <width>300</width>
+                    <height>80</height>
+                    <label>確認送出</label>
+                    <font>font27</font>
+                    <texturefocus colordiffuse="FF0066CC">-</texturefocus>
+                    <texturenofocus colordiffuse="FF339933">-</texturenofocus>
+                    <onup>1038</onup>
+                    <ondown>1008</ondown>
+                    <onleft>1043</onleft>
+                    <onright>1040</onright>
+                </control>
+            </control>
+            
+            <!-- 狀態列 -->
+            <control type="label" id="400">
+                <posx>0</posx>
+                <posy>580</posy>
+                <width>1600</width>
+                <height>40</height>
+                <label>注音輸入法 | 方向鍵移動 | 確認鍵輸入 | 數字鍵選字</label>
+                <font>font24</font>
+                <textcolor>FF888888</textcolor>
+                <align>center</align>
+            </control>
+            
+        </control>
+    </controls>
+</window>

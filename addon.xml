@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.input.zhuyin"
+       name="Zhuyin Input Method (注音輸入法)"
+       version="1.0.0"
+       provider-name="Community">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script"
+               library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service"
+               library="service.py"
+               start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Traditional Chinese Zhuyin (Bopomofo) Input Method</summary>
+        <summary lang="zh_TW">繁體中文注音輸入法</summary>
+        <description lang="en_GB">A Zhuyin (Bopomofo) input method for Kodi, optimized for remote control navigation. Features include phrase prediction, user dictionary learning, and CEC remote support.</description>
+        <description lang="zh_TW">專為 Kodi 設計的注音輸入法，針對遙控器操作優化。功能包含詞組預測、用戶詞庫學習、CEC 遙控器支援。</description>
+        <language>zh_TW</language>
+        <platform>all</platform>
+        <license>MIT</license>
+        <website>https://github.com/kodi-community/script.input.zhuyin</website>
+        <source>https://github.com/kodi-community/script.input.zhuyin</source>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

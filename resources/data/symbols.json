@@ -1,0 +1,93 @@
+{
+    "full_width": {
+        "punctuation": [
+            {"symbol": "，", "name": "逗號", "key": ","},
+            {"symbol": "。", "name": "句號", "key": "."},
+            {"symbol": "、", "name": "頓號", "key": "'"},
+            {"symbol": "；", "name": "分號", "key": ";"},
+            {"symbol": "：", "name": "冒號", "key": ":"},
+            {"symbol": "？", "name": "問號", "key": "?"},
+            {"symbol": "！", "name": "驚嘆號", "key": "!"}
+        ],
+        "brackets": [
+            {"symbol": "「", "name": "單引號開", "key": "["},
+            {"symbol": "」", "name": "單引號關", "key": "]"},
+            {"symbol": "『", "name": "雙引號開", "key": "{"},
+            {"symbol": "』", "name": "雙引號關", "key": "}"},
+            {"symbol": "（", "name": "括號開", "key": "("},
+            {"symbol": "）", "name": "括號關", "key": ")"},
+            {"symbol": "【", "name": "方括號開", "key": "<"},
+            {"symbol": "】", "name": "方括號關", "key": ">"},
+            {"symbol": "《", "name": "書名號開", "key": ""},
+            {"symbol": "》", "name": "書名號關", "key": ""},
+            {"symbol": "〈", "name": "單書名號開", "key": ""},
+            {"symbol": "〉", "name": "單書名號關", "key": ""}
+        ],
+        "special": [
+            {"symbol": "—", "name": "破折號", "key": "-"},
+            {"symbol": "…", "name": "刪節號", "key": ""},
+            {"symbol": "～", "name": "波浪號", "key": "~"},
+            {"symbol": "·", "name": "間隔號", "key": ""},
+            {"symbol": "＆", "name": "和號", "key": "&"},
+            {"symbol": "＃", "name": "井號", "key": "#"},
+            {"symbol": "＠", "name": "小老鼠", "key": "@"},
+            {"symbol": "％", "name": "百分號", "key": "%"},
+            {"symbol": "＊", "name": "星號", "key": "*"},
+            {"symbol": "／", "name": "斜線", "key": "/"},
+            {"symbol": "＼", "name": "反斜線", "key": "\\"},
+            {"symbol": "＋", "name": "加號", "key": "+"},
+            {"symbol": "－", "name": "減號", "key": "-"},
+            {"symbol": "＝", "name": "等號", "key": "="}
+        ]
+    },
+    "half_width": {
+        "punctuation": [
+            {"symbol": ",", "name": "逗號"},
+            {"symbol": ".", "name": "句號"},
+            {"symbol": "/", "name": "斜線"},
+            {"symbol": ";", "name": "分號"},
+            {"symbol": ":", "name": "冒號"},
+            {"symbol": "?", "name": "問號"},
+            {"symbol": "!", "name": "驚嘆號"}
+        ],
+        "brackets": [
+            {"symbol": "'", "name": "單引號"},
+            {"symbol": "\"", "name": "雙引號"},
+            {"symbol": "(", "name": "括號開"},
+            {"symbol": ")", "name": "括號關"},
+            {"symbol": "[", "name": "方括號開"},
+            {"symbol": "]", "name": "方括號關"},
+            {"symbol": "{", "name": "大括號開"},
+            {"symbol": "}", "name": "大括號關"},
+            {"symbol": "<", "name": "角括號開"},
+            {"symbol": ">", "name": "角括號關"}
+        ],
+        "special": [
+            {"symbol": "-", "name": "連字號"},
+            {"symbol": "_", "name": "底線"},
+            {"symbol": "~", "name": "波浪號"},
+            {"symbol": "@", "name": "小老鼠"},
+            {"symbol": "#", "name": "井號"},
+            {"symbol": "$", "name": "錢號"},
+            {"symbol": "%", "name": "百分號"},
+            {"symbol": "^", "name": "插入號"},
+            {"symbol": "&", "name": "和號"},
+            {"symbol": "*", "name": "星號"},
+            {"symbol": "+", "name": "加號"},
+            {"symbol": "=", "name": "等號"},
+            {"symbol": "|", "name": "直線"},
+            {"symbol": "\\", "name": "反斜線"}
+        ]
+    },
+    "numbers": {
+        "full_width": ["０", "１", "２", "３", "４", "５", "６", "７", "８", "９"],
+        "chinese_lower": ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九"],
+        "chinese_upper": ["零", "壹", "貳", "參", "肆", "伍", "陸", "柒", "捌", "玖"]
+    },
+    "units": ["十", "百", "千", "萬", "億", "兆"],
+    "common": [
+        "、", "。", "，", "；", "：", "？", "！",
+        "「", "」", "『", "』", "（", "）",
+        "—", "…", "～"
+    ]
+}

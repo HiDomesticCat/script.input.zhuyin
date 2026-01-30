@@ -1,0 +1,65 @@
+# -*- coding: utf-8 -*-
+"""
+Kodi 注音輸入法 - 背景服務
+監聽快捷鍵以啟動輸入法
+"""
+
+import xbmc
+import xbmcaddon
+import xbmcgui
+
+ADDON = xbmcaddon.Addon()
+ADDON_ID = ADDON.getAddonInfo('id')
+
+
+def log(message: str, level: int = xbmc.LOGINFO):
+    """記錄日誌"""
+    xbmc.log(f"[{ADDON_ID}] {message}", level)
+
+
+class ZhuyinService(xbmc.Monitor):
+    """注音輸入法背景服務"""
+    
+    def __init__(self):
+        super().__init__()
+        self.running = True
+        log("注音輸入法服務啟動")
+    
+    def onSettingsChanged(self):
+        """設定變更時"""
+        log("設定已變更")
+        # 重新載入設定
+        ADDON.clearSettings()
+    
+    def onNotification(self, sender: str, method: str, data: str):
+        """
+        處理通知
+        
+        可以監聽自訂通知來啟動輸入法
+        """
+        if method == 'Other.ZhuyinInput':
+            log("收到啟動輸入法通知")
+            self._launch_keyboard()
+    
+    def _launch_keyboard(self):
+        """啟動輸入法"""
+        xbmc.executebuiltin(f'RunScript({ADDON_ID})')
+    
+    def run(self):
+        """服務主迴圈"""
+        # 服務保持運行
+        while self.running and not self.abortRequested():
+            if self.waitForAbort(1):
+                break
+        
+        log("注音輸入法服務結束")
+
+
+def main():
+    """服務入口"""
+    service = ZhuyinService()
+    service.run()
+
+
+if __name__ == '__main__':
+    main()

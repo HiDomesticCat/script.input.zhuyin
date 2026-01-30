@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings version="2">
+    <section id="general">
+        <category id="general" label="32001">
+            <group id="1" label="32002">
+                <setting id="candidate_count" type="select" label="32010" default="9">
+                    <level>0</level>
+                    <constraints>
+                        <options>
+                            <option label="5">5</option>
+                            <option label="7">7</option>
+                            <option label="9">9</option>
+                        </options>
+                    </constraints>
+                    <control type="list" format="string"/>
+                </setting>
+                <setting id="learning_enabled" type="boolean" label="32011" default="true">
+                    <level>0</level>
+                    <control type="toggle"/>
+                </setting>
+                <setting id="auto_commit" type="boolean" label="32012" default="false">
+                    <level>1</level>
+                    <control type="toggle"/>
+                </setting>
+            </group>
+            <group id="2" label="32003">
+                <setting id="full_width_symbol" type="boolean" label="32020" default="true">
+                    <level>0</level>
+                    <control type="toggle"/>
+                </setting>
+                <setting id="fuzzy_tone" type="boolean" label="32021" default="false">
+                    <level>1</level>
+                    <control type="toggle"/>
+                </setting>
+            </group>
+            <group id="3" label="32004">
+                <setting id="keyboard_layout" type="select" label="32030" default="standard">
+                    <level>0</level>
+                    <constraints>
+                        <options>
+                            <option label="32031">standard</option>
+                            <option label="32032">eten</option>
+                        </options>
+                    </constraints>
+                    <control type="list" format="string"/>
+                </setting>
+            </group>
+        </category>
+        <category id="advanced" label="32005">
+            <group id="1" label="32006">
+                <setting id="clear_history" type="action" label="32040">
+                    <level>2</level>
+                    <control type="button" format="action"/>
+                    <data>
+                        <action>RunScript(script.input.zhuyin,action=clear_history)</action>
+                    </data>
+                </setting>
+                <setting id="export_userdict" type="action" label="32041">
+                    <level>2</level>
+                    <control type="button" format="action"/>
+                    <data>
+                        <action>RunScript(script.input.zhuyin,action=export_dict)</action>
+                    </data>
+                </setting>
+            </group>
+        </category>
+    </section>
+</settings>

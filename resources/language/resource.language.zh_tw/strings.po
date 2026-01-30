@@ -1,0 +1,109 @@
+# Kodi Media Center language file
+# Addon Name: Zhuyin Input Method
+# Addon id: script.input.zhuyin
+# Addon Provider: Community
+msgid ""
+msgstr ""
+"Project-Id-Version: script.input.zhuyin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: Community\n"
+"Language-Team: Chinese (Traditional)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "#32001"
+msgid "General Settings"
+msgstr "一般設定"
+
+msgctxt "#32002"
+msgid "Input Options"
+msgstr "輸入選項"
+
+msgctxt "#32003"
+msgid "Symbol Options"
+msgstr "符號選項"
+
+msgctxt "#32004"
+msgid "Keyboard Layout"
+msgstr "鍵盤佈局"
+
+msgctxt "#32005"
+msgid "Advanced"
+msgstr "進階設定"
+
+msgctxt "#32006"
+msgid "User Data"
+msgstr "用戶資料"
+
+msgctxt "#32010"
+msgid "Candidate count"
+msgstr "候選詞數量"
+
+msgctxt "#32011"
+msgid "Enable learning"
+msgstr "啟用學習功能"
+
+msgctxt "#32012"
+msgid "Auto commit single candidate"
+msgstr "單一候選時自動送出"
+
+msgctxt "#32020"
+msgid "Use full-width symbols"
+msgstr "使用全形符號"
+
+msgctxt "#32021"
+msgid "Fuzzy tone matching"
+msgstr "模糊聲調匹配"
+
+msgctxt "#32030"
+msgid "Keyboard layout"
+msgstr "鍵盤佈局"
+
+msgctxt "#32031"
+msgid "Standard (大千)"
+msgstr "標準（大千）"
+
+msgctxt "#32032"
+msgid "ETen (倚天)"
+msgstr "倚天"
+
+msgctxt "#32040"
+msgid "Clear learning history"
+msgstr "清除學習歷史"
+
+msgctxt "#32041"
+msgid "Export user dictionary"
+msgstr "匯出用戶詞庫"
+
+msgctxt "#32100"
+msgid "Zhuyin Input"
+msgstr "注音輸入"
+
+msgctxt "#32101"
+msgid "Composing"
+msgstr "組字中"
+
+msgctxt "#32102"
+msgid "Selecting"
+msgstr "選字中"
+
+msgctxt "#32103"
+msgid "Press number to select candidate"
+msgstr "按數字鍵選字"
+
+msgctxt "#32104"
+msgid "Press SPACE to select first candidate"
+msgstr "按空白鍵選擇第一個候選詞"
+
+msgctxt "#32105"
+msgid "Input cancelled"
+msgstr "輸入已取消"
+
+msgctxt "#32106"
+msgid "Input completed"
+msgstr "輸入完成"
